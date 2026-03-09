@@ -1,0 +1,18 @@
+# SummaMeta Backend — Render 512MB uyumlu
+
+flask==3.0.3
+gunicorn==22.0.0
+werkzeug==3.0.3
+
+# PDF işleme — ÇİFT strateji (taranmış PDF fallback için)
+pdfplumber==0.11.4      # Hafif, dijital PDF için mükemmel (~15MB)
+PyMuPDF==1.24.10        # Fallback — daha agresif metin çıkarma (~50MB)
+
+# DOCX işleme
+python-docx==1.1.2
+
+# HTTP istekleri (AI provider'lar için)
+requests==2.32.3
+
+# Yardımcı
+python-dotenv==1.0.1
