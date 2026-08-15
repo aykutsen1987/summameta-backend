@@ -54,7 +54,10 @@ PROVIDERS = {
         "url": "https://api.groq.com/openai/v1/chat/completions",
         "models": {
             "llama4-scout":  "meta-llama/llama-4-scout-17b-16e-instruct",
-            "llama3-70b":    "llama-3.3-70b-versatile",
+            # llama-3.3-70b-versatile Groq tarafindan kaldirildi (16.08.2026);
+            # birincil: gpt-oss-120b, yedek: qwen3.6-27b.
+            "llama3-70b":    "openai/gpt-oss-120b",
+            "qwen3-6-27b":   "qwen/qwen3.6-27b",
             "llama3-8b":     "llama-3.1-8b-instant",
             "mixtral-8x7b":  "mixtral-8x7b-32768",
             "gemma3-9b":     "gemma2-9b-it",
